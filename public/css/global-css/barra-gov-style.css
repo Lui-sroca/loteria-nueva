@@ -1,0 +1,33 @@
+body{
+    margin:0px;
+}
+
+
+.barra-gov-principal{
+    background:RGB(51, 102, 204);
+    width:100%;
+    height: 40px;
+    display:flex;
+    align-items:center;
+
+}
+
+
+
+.div-img-gov{
+    margin-left:30lvh;
+}
+
+.img-gov{
+    width:100px;
+    cursor:pointer;
+    transition:0.5s;
+}
+
+.img-gov:hover{
+    border:solid 2px;
+    border-color:green;
+    border-radius:10px;
+    padding:5px;
+
+}

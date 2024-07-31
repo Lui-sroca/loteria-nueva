@@ -1,0 +1,105 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F4F4F4; /* Fondo claro para el cuerpo */
+    color: #333333; /* Texto oscuro para mejor legibilidad */
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content:center;
+    max-width: 100%; 
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-section, .form-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.form-section p{
+    text-align:center;
+    font-size:15px;
+    margin:40px;
+    font-weight:600;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items:start;
+}
+
+.image-section img{
+    width:500px;
+}
+
+.header-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.form-section {
+    max-width: 500px; /* Ancho máximo del formulario */
+}
+
+h1 {
+    color: #008A31; /* Verde oscuro para el título */
+    font-size: 20px; /* Tamaño de fuente más pequeño */
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 8px; /* Márgenes reducidos */
+    font-weight: bold;
+    color: #008A31; /* Verde oscuro para las etiquetas */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    padding: 8px; /* Espaciado reducido */
+    margin-top: 4px; /* Márgenes reducidos */
+    border: 1px solid #CCCCCC; /* Borde gris claro */
+    border-radius: 4px;
+    color: #333333; /* Texto oscuro */
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+}
+
+textarea {
+    height: 80px; /* Tamaño de área de texto reducido */
+    resize: vertical;
+}
+
+input[type="submit"] {
+    margin-top: 15px;
+    padding: 8px;
+    background-color: #FF0006; /* Rojo para el botón */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+}
+
+input[type="submit"]:hover {
+    background-color: #D50000; /* Rojo más oscuro en el hover */
+}
+
+input[type="file"] {
+    margin-top: 5px;
+}

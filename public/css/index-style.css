@@ -1,0 +1,130 @@
+/* Estilo principal del banner */
+.banner-principal {
+    overflow: hidden;
+}
+
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+.carousel-fade .carousel-item.active {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.img-zoom {
+    transition: transform 1.5s ease-in-out;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-indicators button {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-indicators .active {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Estilo principal de la sección de boletos */
+.section-info-boletos {
+    width: 100%;
+    background: white;
+    margin: 20px 0px 200px 0px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.div-boletos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    justify-items: center;
+}
+
+.div-boletos .boleto {
+    background: #e6ebe9;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 30px;
+}
+
+.boleto img {
+    width: 300px;
+    border-radius: 20px;
+    opacity: 0;
+    transition: .7s ease-in-out all;
+    transform: scale(0.9);
+}
+
+.boleto img.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.boleto .img-1 {
+    width: 500px;
+    border-radius: 20px;
+}
+
+/* Media queries para hacer la página responsive */
+@media (max-width: 1200px) {
+    .section-info-boletos {
+        margin: 20px 0px 100px 0px;
+    }
+}
+
+@media (max-width: 900px) {
+    .div-boletos {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .div-boletos .boleto {
+        border-radius: 20px;
+    }
+
+    .boleto img {
+        max-width: 300px;
+    }
+
+    .section-info-boletos {
+        margin: 20px 0px 50px 0px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .boleto img {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .div-boletos .boleto {
+        border-radius: 15px;
+    }
+
+    .boleto img {
+        max-width: 200px;
+    }
+
+    .section-info-boletos {
+        margin: 20px 0px 30px 0px;
+    }
+}

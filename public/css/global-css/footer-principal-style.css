@@ -1,0 +1,75 @@
+.div-logos-footer {
+    width: 100%;
+    height: auto;
+    background: #E6E6E6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.div-logos-footer .logo {
+    width: 140px;
+}
+
+.div-logos-footer .logo-co {
+    width: 160px;
+}
+
+.div-informacion {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 18px;
+    text-align: center;
+}
+
+.div-informacion .titulo-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #008A31;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.div-informacion .titulo-info p {
+    margin: 15px;
+}
+
+.div-informacion .titulo-info img {
+    width: 40px;
+}
+
+.div-nombre-loteria {
+    width: 100%;
+    height: 30px;
+    background: #E6E6E6;
+    padding-left: 100px;
+    font-weight: 500;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 1200px) {
+    .div-informacion {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .div-informacion {
+        grid-template-columns: 1fr;
+    }
+
+    .div-logos-footer {
+        flex-direction: column;
+    }
+
+    .div-nombre-loteria {
+        padding-left: 20px;
+        text-align: center;
+    }
+}
